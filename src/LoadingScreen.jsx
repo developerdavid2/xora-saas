@@ -14,7 +14,7 @@ const LoadingScreen = ({ isLoading }) => {
           <img
             src="/images/xora.svg"
             alt="Loading"
-            className="w-full max-md:w-4/5"
+            className="w-full max-sm:w-3/5 max-md:w-4/5"
           />
         </div>
       </div>
