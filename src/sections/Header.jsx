@@ -52,7 +52,7 @@ const Header = () => {
         {/*</a>*/}
         <div
           className={clsx(
-            "w-full max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:bg-s2 max-lg:opacity-0",
+            "w-full max-lg:fixed max-lg:top-0 max-lg:left-0 max-lg:w-full max-lg:bg-s2 transition-all duration-500 max-lg:opacity-0",
             isOpen ? "max-lg:opacity-100" : "max-lg:pointer-events-none",
           )}
         >
@@ -108,7 +108,7 @@ const Header = () => {
           </div>
         </div>
         <button
-          className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center"
+          className="lg:hidden z-2 size-10 border-2 border-s4/25 rounded-full flex justify-center items-center transition-all duration-500"
           onClick={() => setIsOpen((prevState) => !prevState)}
         >
           <img

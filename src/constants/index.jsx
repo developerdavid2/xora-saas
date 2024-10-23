@@ -429,8 +429,8 @@ export const socials = [
 ];
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "Pricing", href: "#" },
-  { label: "FAQ", href: "#" },
-  { label: "Download", href: "#" },
+  { label: "features", href: "#" },
+  { label: "pricing", href: "#" },
+  { label: "faq", href: "#" },
+  { label: "download", href: "#" },
 ];

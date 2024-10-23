@@ -37,27 +37,27 @@
   }
 
   .h1 {
-    @apply text-[84px] font-black leading-[84px] tracking-[-0.03em];
+    @apply text-[64px] font-black leading-[84px] tracking-[-0.03em];
   }
 
   .h2 {
-    @apply text-[64px] font-black leading-[64px];
+    @apply text-[48px] font-black leading-[64px];
   }
 
   .h3 {
-    @apply text-[48px] font-semibold leading-[56px] tracking-[-0.02em];
+    @apply text-[40px] font-semibold leading-[56px] tracking-[-0.02em];
   }
 
   .h4 {
-    @apply text-[40px] font-semibold leading-[52px];
+    @apply text-[32px] font-semibold leading-[52px];
   }
 
   .h5 {
-    @apply text-[32px] font-semibold leading-[40px];
+    @apply text-[24px] font-semibold leading-[40px];
   }
 
   .h6 {
-    @apply text-[24px] font-medium leading-[36px];
+    @apply text-[16px] font-medium leading-[36px];
   }
 
   .body-1 {
@@ -317,4 +317,37 @@
   }
 
   /*  END of Footer*/
+
+  .spinner {
+    position: relative;
+  }
+
+  .spinner-before {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 15.7px;
+    height: 15.7px;
+    background: #3c52d9;
+  }
+
+  .spinner-after {
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    animation: spinner-y7ej37 0.8s infinite linear;
+    border: 17.6px solid #3c52d9;
+    border-left-color: transparent;
+    border-right-color: transparent;
+  }
+
+  @keyframes spinner-y7ej37 {
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
 }
